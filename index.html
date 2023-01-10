@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
 <meta property="og:image" content="images/overview.png"/>
-<meta property="og:title" content="Learning Dynamic Facial Radiance Fields for Few-Shot Talking Head Synthesis" />
+<meta property="og:title" content="DiffTalk: Crafting Diffusion Models for Generalized Talking Head Synthesis" />
 
 <script src="lib.js" type="text/javascript"></script>
 <script src="popup.js" type="text/javascript"></script>
@@ -53,9 +53,10 @@ BODY {
 <center><h2>Learning Dynamic Facial Radiance Fields for Few-Shot Talking Head Synthesis</h2></center>
 <center><h3>
   <a href="https://sstzal.github.io/">Shuai Shen</a>&nbsp;&nbsp;
+  Wenliang Zhao&nbsp;&nbsp;
+  Zibin Meng&nbsp;&nbsp;
   <a href="https://li-wanhua.github.io/">Wanhua Li</a>&nbsp;&nbsp;
   <a href="http://www.zhengzhu.net/">Zheng Zhu</a>&nbsp;&nbsp;
-  <a href="https://duanyueqi.github.io/">Yueqi Duan</a>&nbsp;&nbsp;
   Jie Zhou&nbsp;&nbsp;
   Jiwen Lu
   </center>
@@ -64,7 +65,7 @@ BODY {
 <center><h4>ECCV 2022</h4></center>
 <center><h3><strong> 
 <a href="https://github.com/sstzal/DFRF/blob/show_page/images/DFRF_eccv2022.pdf">[Paper]</a>
-<a href="https://github.com/sstzal/DFRF">[Code]</a>
+<a href="https://github.com/sstzal/DiffTalk">[Code]</a>
 <a href="https://www.youtube.com/watch?v=F6fkVNk9bBw">[Video]</a>
 </strong> </h3></center>
 
@@ -75,7 +76,7 @@ BODY {
 
 	
 <h2>Abstract & Method</h2>
-<div style="font-size:16px"><p>Talking head synthesis is an emerging technology with wide applications in film dubbing, virtual avatars and online education. Recent NeRF-based methods generate more natural talking videos, as they better capture the 3D structural information of faces. However, a specific model needs to be trained for each identity with a large dataset. In this paper, we propose Dynamic Facial Radiance Fields (DFRF) for few-shot talking head synthesis, which can rapidly generalize to an unseen identity with few training data. Different from the existing NeRF-based methods which directly encode the 3D geometry and appearance of a specific person into the network, our DFRF conditions face radiance field on 2D appearance images to learn the face prior. Thus the facial radiance field can be flexibly adjusted to the new identity with few reference images. Additionally, for better modeling of the facial deformations, we propose a differentiable face warping module conditioned on audio signals to deform all reference images to the query space. Extensive experiments show that with only tens of seconds of training clip available, our proposed DFRF can synthesize natural and high-quality audio-driven talking head videos for novel identities with only 40k iterations. We highly recommend readers view our supplementary video for intuitive comparisons.</p></div>
+<div style="font-size:16px"><p>Talking head synthesis is a promising approach for the video production industry. Recently, a lot of effort has been devoted in this research area to improve the \textbf{generation quality} or enhance the \textbf{model generalization}. However, there are few works able to address both issues simultaneously, which is essential for practical applications. To this end, in this paper, we turn attention to the emerging powerful Latent \textbf{Diff}usion Models, and model the \textbf{Talk}ing head generation as an audio-driven temporally coherent denoising process (DiffTalk). More specifically, instead of employing audio signals as the single driving factor, we investigate the control mechanism of the talking face, and incorporate reference face images and landmarks as conditions for personality-aware generalized synthesis. In this way, the proposed DiffTalk is capable of producing high-quality talking head videos in synchronization with the source audio, and more importantly, it can be naturally generalized across different identities without any further fine-tuning. Additionally, our DiffTalk can be gracefully tailored for higher-resolution synthesis with negligible extra computational cost. Extensive experiments show that the proposed DiffTalk efficiently synthesizes high-fidelity audio-driven talking head videos for generalized novel identities.</p></div>
 <br>
 <center><a href="images/overview.png">
 <img style="PADDING-LEFT: 0px; PADDING-RIGHT: 200px;" src="images/overview.png" width="800"> </a></center>
