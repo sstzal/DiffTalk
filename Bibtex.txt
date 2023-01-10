@@ -1,0 +1,6 @@
+@inproceedings{shen2023difftalk,
+   author    = {Shen, Shuai and Zhao, Wenliang and Meng, Zibin and Li, Wanhua and Zhu, Zheng and Zhou, Jie and Lu, Jiwen},
+   title     = {DiffTalk: Crafting Diffusion Models for Generalized Talking Head Synthesis},
+   booktitle = {arxiv},
+   year      = {2023}
+}
