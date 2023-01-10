@@ -1,2 +1,2 @@
 # DiffTalk
-talking head generation
+Coming soon…
