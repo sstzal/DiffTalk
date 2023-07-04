@@ -1,5 +1,7 @@
 # DiffTalk #
-The pytorch implementation for our submitted paper "DiffTalk: Crafting Diffusion Models for Generalized Audio-Driven Portraits Animation".
+The pytorch implementation for our CVPR2023 paper "DiffTalk: Crafting Diffusion Models for Generalized Audio-Driven Portraits Animation".
+
+[[Project]](https://sstzal.github.io/DiffTalk/) [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Shen_DiffTalk_Crafting_Diffusion_Models_for_Generalized_Audio-Driven_Portraits_Animation_CVPR_2023_paper.pdf) [[Video Demo]](https://cloud.tsinghua.edu.cn/f/e13f5aad2f4c4f898ae7/)
 
 ## Requirements
 - python 3.7.0
