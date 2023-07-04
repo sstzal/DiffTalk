@@ -63,3 +63,18 @@ sh run.sh
 ```
 sh inference.sh
 ```
+
+## Acknowledgement 
+This code is built upon the publicly available code [latent-diffusion](https://github.com/CompVis/latent-diffusion). Thanks the authors of latent-diffusion for making their excellent work and codes publicly available. 
+
+## Citation ##
+Please cite the following paper if you use this repository in your research.
+
+```
+@inproceedings{shen2023difftalk,
+   author={Shen, Shuai and Zhao, Wenliang and Meng, Zibin and Li, Wanhua and Zhu, Zheng and Zhou, Jie and Lu, Jiwen},
+   title={DiffTalk: Crafting Diffusion Models for Generalized Audio-Driven Portraits Animation},
+   booktitle={CVPR},
+   year={2023}
+}
+```
