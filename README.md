@@ -1,2 +1,0 @@
-# DiffTalk
-Coming soon…
