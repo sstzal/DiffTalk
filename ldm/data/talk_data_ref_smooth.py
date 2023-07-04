@@ -93,11 +93,8 @@ class TALKBase(Dataset):
 
 class TalkTrain(TALKBase):
     def __init__(self, **kwargs):
-        #super().__init__(txt_file="./data/data_train.txt", data_root="./data/HDTF", **kwargs)
-        super().__init__(txt_file="./data/data_train.txt", data_root="/mnt/cfs/algorithm/public_data/HDTF", **kwargs)
-
+        super().__init__(txt_file="./data/data_train.txt", data_root="./data/HDTF", **kwargs)
 
 class TalkValidation(TALKBase):
     def __init__(self, flip_p=0., **kwargs):
-        #super().__init__(txt_file="./data/data_test.txt", data_root="./data/HDTF", flip_p=flip_p, **kwargs)
-        super().__init__(txt_file="./data/data_test.txt", data_root="/mnt/cfs/algorithm/public_data/HDTF", flip_p=flip_p, **kwargs)
+        super().__init__(txt_file="./data/data_test.txt", data_root="./data/HDTF", flip_p=flip_p, **kwargs)
