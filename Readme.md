@@ -12,7 +12,7 @@ The pytorch implementation for our CVPR2023 paper "DiffTalk: Crafting Diffusion 
 
 For more details, please refer to the `requirements.txt`. We conduct the experiments with 8 NVIDIA 3090Ti GPUs.
 
-Put the [pre-trained model](https://cloud.tsinghua.edu.cn/f/7eb11fc208144ed0ad20/?dl=1) for the first stage to `./models`.
+Put the first stage [model](https://cloud.tsinghua.edu.cn/f/7eb11fc208144ed0ad20/?dl=1) to `./models`.
 
 ## Dataset
 Please download the HDTF dataset for training and test, and process the dataset as following.
