@@ -12,7 +12,7 @@ The pytorch implementation for our CVPR2023 paper "DiffTalk: Crafting Diffusion 
 
 For more details, please refer to the `requirements.txt`. We conduct the experiments with 8 NVIDIA 3090Ti GPUs.
 
-Put the [[pre-trained model]](https://cloud.tsinghua.edu.cn/f/7eb11fc208144ed0ad20/?dl=1) for the first stage to `./models`.
+Put the [pre-trained model](https://cloud.tsinghua.edu.cn/f/7eb11fc208144ed0ad20/?dl=1) for the first stage to `./models`.
 
 ## Dataset
 Please download the HDTF dataset for training and test, and process the dataset as following.
@@ -65,6 +65,12 @@ sh run.sh
 ```
 sh inference.sh
 ```
+## Weakness
+1. The DiffTalk models talking head generation as an iterative denoising process, which needs more time to synthesize a frame compared with most GAN-based approaches. This is also a common problem of LDM-based works.
+2. The model is trained on the HDTF dataset, and it sometimes fails on some identities from other datasets. 
+3. When driving a portrait with more challenging cross-identity audio, the audio-lip synchronization of the synthesized video is slightly inferior to the ones under self-driven setting.
+4. During inference, the network is also sensitive to the mask shape in z_T , where the mask needs to cover the mouth region completely and its shape cannot leak any
+lip shape information.
 
 ## Acknowledgement 
 This code is built upon the publicly available code [latent-diffusion](https://github.com/CompVis/latent-diffusion). Thanks the authors of latent-diffusion for making their excellent work and codes publicly available. 
