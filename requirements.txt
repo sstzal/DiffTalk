@@ -8,7 +8,7 @@ asynctest==0.13.0
 attrs==22.1.0
 audioread==3.0.0
 cachetools==5.2.0
-certifi @ file:///croot/certifi_1665076670883/work/certifi
+certifi
 cffi==1.15.1
 charset-normalizer==2.1.1
 click==8.1.3
@@ -40,13 +40,13 @@ Markdown==3.4.1
 MarkupSafe==2.1.1
 matplotlib==3.5.3
 mkl-fft==1.3.1
-mkl-random @ file:///tmp/build/80754af9/mkl_random_1626179032232/work
+mkl-random
 mkl-service==2.4.0
 multidict==6.0.2
 mutagen==1.46.0
 networkx==2.6.3
 numba==0.56.3
-numpy @ file:///opt/conda/conda-bld/numpy_and_numpy_base_1653915516269/work
+numpy
 oauthlib==3.2.2
 omegaconf==2.1.1
 opencv-python==4.6.0.66
@@ -81,7 +81,7 @@ scikit-learn==1.0.2
 scikit-video==1.1.11
 scipy==1.7.3
 seaborn==0.12.1
-six @ file:///tmp/build/80754af9/six_1644875935023/work
+six
 sklearn==0.0
 soundfile==0.11.0
 -e git+https://github.com/CompVis/taming-transformers.git@24268930bf1dce879235a7fddd0b2355b84d7ea6#egg=taming_transformers
@@ -98,7 +98,7 @@ torchmetrics==0.10.0
 torchvision==0.11.0
 tqdm==4.64.1
 typing==3.7.4.3
-typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+typing_extensions
 urllib3==1.26.12
 wcwidth==0.2.5
 webrtcvad==2.0.10
